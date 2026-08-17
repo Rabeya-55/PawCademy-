@@ -28,16 +28,18 @@ git clone https://github.com/Rabeya-55/PawCademy-.git
 2. Open `index.html` in your browser, or use the VS Code Live Server extension for the best experience.
 
 ## Project Structure
-
-├── index.html          # Home page
-├── adopt.html          # Pet adoption page
-├── product.html        # Pet product shop
-├── anipedia.html       # Animal encyclopedia
-├── anicare.html        # Pet care videos
-├── about.html           # About page
-├── login.html / signup.html
-├── image/                # All static images/assets
-└── *.css, *.js           # Stylesheets and scripts
+```
+index.html          - Home page
+adopt.html          - Pet adoption page
+product.html        - Pet product shop
+anipedia.html       - Animal encyclopedia
+anicare.html        - Pet care videos
+about.html          - About page
+login.html          - Login page
+signup.html         - Signup page
+image/              - All static images/assets
+*.css, *.js         - Stylesheets and scripts
+```
 
 ## Future Improvements
 
