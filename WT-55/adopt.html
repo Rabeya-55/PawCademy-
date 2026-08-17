@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopt Pet</title>
+  <link rel="stylesheet" href="adopt.css">
+  
+</head>
+<body>
+  
+     <header>
+        <div class="logo">🐾PawCademy</div>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="adopt.html">Adoption</a></li>
+                    <li><a href="anipedia.html">Anipedia</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+
+  <!-- Header -->
+  <div class="product">
+    <h1>Adopt a Pet</h1>
+    <p>Explore all the cute pets available for adoption</p>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search pets like dog, cat, rabbit..." />
+    <button onclick="filterPets()">Search</button>
+  </div>
+
+  <!-- Message if no results -->
+  <div id="noResultsMessage">No results found...</div>
+
+  <!-- Pet Container -->
+  <div class="container">
+
+                <!----DOG---->
+    <div class="pet" data-type="dog">
+      <img src="image/Labrador.jpeg" width="200" height="200">
+      <h3>Labrador Retriever</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/german.jpeg" width="200" height="200">
+      <h3>German Shepherd</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/golden.jpeg" width="200" height="200">
+      <h3>Golden Retriever</h3>
+      <p>Age: 4 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/bull.jpeg" width="200" height="200">
+      <h3>Bulldog</h3>
+      <p>Age: 9 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/poodle.jpeg" width="200" height="200">
+      <h3>Poodle</h3>
+      <p>Age: 7 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/beagle.jpeg" width="200" height="200">
+      <h3>Beagle</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/dach.jpeg" width="200" height="200">
+      <h3>Dachshund</h3>
+      <p>Age: 4 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/husky.jpeg" width="200" height="200">
+      <h3>Siberian Husky</h3>
+      <p>Age: 6 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/boxer.jpeg" width="200" height="200">
+      <h3>Boxer</h3>
+      <p>Age: 1.3 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="dog">
+      <img src="image/shih.jpeg" width="200" height="200">
+      <h3>Shih Tzu</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+            
+                  <!----CAT----->
+    <div class="pet" data-type="cat">
+      <img src="image/persian.jpeg.jpg" width="200" height="200">
+      <h3>Persian</h3>
+      <p>Age:  4 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/siam.jpeg" width="200" height="200">
+      <h3>Siamese</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/miane.jpeg" width="200" height="200">
+      <h3>Maine Coon</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/bengal.jpeg" width="200" height="200">
+      <h3>Bengal</h3>
+      <p>Age: 8 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/rag.jpeg" width="200" height="200">
+      <h3>Ragdoll</h3>
+      <p>Age: 9 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/bri.jpeg" width="200" height="200">
+      <h3>British Shorthair</h3>
+      <p>Age: 2 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/scotish.jpeg" width="200" height="200">
+      <h3>Scottish Fold</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/aby.jpeg" width="200" height="200">
+      <h3>Abyssinian</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="cat">
+      <img src="image/american.jpeg" width="200" height="200">
+      <h3>American Shorthair</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+                    <!------RABBIT----->
+    <div class="pet" data-type="rabbit">
+      <img src="image/holland.jpeg" width="200" height="200">
+      <h3>Holland Lop</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/nether.jpeg" width="200" height="200">
+      <h3>Netherland Dwarf</h3>
+      <p>Age: 2 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/mini_rex.jpeg" width="200" height="200">
+      <h3>Mini Rex</h3>
+      <p>Age: 4 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/flemish.jpeg" width="200" height="200">
+      <h3>Flemish Giant</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/lionhead.jpeg" width="200" height="200">
+      <h3>Lionhead</h3>
+      <p>Age: 9 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/english_lop.jpeg" width="200" height="200">
+      <h3>English Lop</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/satin.jpeg" width="200" height="200">
+      <h3>Satin Rabbit</h3>
+      <p>Age: 3 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/mini_lop.jpeg" width="200" height="200">
+      <h3>Mini Lop</h3>
+      <p>Age: 2 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="rabbit">
+      <img src="image/harlen.jpeg" width="200" height="200">
+      <h3>Harlequin Rabbit</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+                    <!----BIRD----->
+    <div class="pet" data-type="bird">
+      <img src="image/budg.jpeg" width="200" height="200">
+      <h3>Budgerigar</h3>
+      <p>Age: 5 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="bird">
+      <img src="image/cock.jpeg" width="200" height="200">
+      <h3>Cockatiel</h3>
+      <p>Age: 6 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="bird">
+      <img src="image/gray.jpeg" width="200" height="200">
+      <h3>African Grey Parrot</h3>
+      <p>Age: 4 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="bird">
+      <img src="image/lovebird.jpeg" width="200" height="200">
+      <h3>Lovebird</h3>
+      <p>Age:  7 months</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="bird">
+      <img src="image/finch.jpeg" width="200" height="200">
+      <h3>Finch</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+    <div class="pet" data-type="bird">
+      <img src="image/cockkatoo.jpeg" width="200" height="200">
+      <h3>Cockatoo</h3>
+      <p>Age: 2 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+
+      <div class="pet" data-type="bird">
+      <img src="image/electus.jpeg" width="200" height="200">
+      <h3>Eclectus Parrot</h3>
+      <p>Age: 1 year</p>
+      <button class="adopt-btn">Adopt Now</button>
+    </div>
+  </div>
+
+  <!-- JS to handle search -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const pets = document.querySelectorAll('.pet');
+    const noResultsMessage = document.getElementById('noResultsMessage');
+
+    searchInput.addEventListener('input', function () {
+      const searchValue = this.value.trim().toLowerCase();
+      let anyVisible = false;
+
+      pets.forEach(pet => {
+        const petType = pet.getAttribute('data-type').toLowerCase();
+
+        if (searchValue === '' || petType.includes(searchValue)) {
+          pet.style.display = 'block';
+          anyVisible = true;
+        } else {
+          pet.style.display = 'none';
+        }
+      });
+
+      // Show or hide the "No results found" message
+      noResultsMessage.style.display = anyVisible ? 'none' : 'block';
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Item</title>
+</head>
+<link rel="stylesheet" href="product.css">
+<body>
+
+     <header>
+        
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="adopt.html">Adoption</a></li>
+                    <li><a href="anipedia.html">Anipedia</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                </div>
+        </nav>
+    </header>
+    <div class="shop" >
+    <h2 >Shop for your pets</h2>
+    <p>Explore our latest collection.</p>
+    </div>
+
+    <div class="menu-bar">
+    <div class="dropdown">
+        <button class="dropbtn">Dog Products</button>
+    <div class="dropdown-content">
+        <a href="#" onclick="filterProducts('dog-food')">Dog Food</a>
+        <a href="#" onclick="filterProducts('dog-brush')">Dog Brush</a>
+        <a href="#" onclick="filterProducts('dog-dental-chew')">Dental Chews</a>
+        <a href="#" onclick="filterProducts('dog-shampoo')">Dog Shampoo</a>
+        <a href="#" onclick="filterProducts('dog-anti-itch spray')">Anti-itching Spray</a>
+        <a href="#" onclick="filterProducts('dog-nail-clippers')">Nail Clippers</a>
+        <a href="#" onclick="filterProducts('dog-collars')">Dog Collars</a>
+        <a href="#" onclick="filterProducts('dog-leashe')">Dog Leashes</a>
+        <a href="#" onclick="filterProducts('dog-houses')">Dog Houses</a>
+        <a href="#" onclick="filterProducts('dog-beds')">Dog Beds</a>
+        <a href="#" onclick="filterProducts('dog-poop-bags')">Poop Bags</a>
+        <a href="#" onclick="filterProducts('dog-bowls')">Dog Bowls</a>
+        <a href="#" onclick="filterProducts('dog-carriers')">Dog Carriers</a>
+        <a href="#" onclick="filterProducts('dog-')">Show All Dog Products</a>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Cat Products</button>
+    <div class="dropdown-content">
+        <a href="#" onclick="filterProducts('dry-cat-food')">Dry Cat Food</a>
+        <a href="#" onclick="filterProducts('grain-free-cat-food')">Grain-Free Cat Food</a>
+        <a href="#" onclick="filterProducts('cat-nip')">Catnip</a>
+        <a href="#" onclick="filterProducts('cat-Shampoo')">Cat Shampoo</a>
+        <a href="#" onclick="filterProducts('cat-Litter Boxes')">Litter Boxes</a>
+        <a href="#" onclick="filterProducts('cat-Brushes')">Cat Brushes</a>
+        <a href="#" onclick="filterProducts('cat-Caves')">Cat Caves</a>
+        <a href="#" onclick="filterProducts('cat-Collars with Bells')">Collars with Bells</a>
+        <a href="#" onclick="filterProducts('cat-Carriers')">Cat Carriers</a>
+        <a href="#" onclick="filterProducts('cat-Anti-Hairball Supplements')">Anti-Hairball </a>
+        <a href="#" onclick="filterProducts('cat-')">Show All Cat Products</a>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Rabbit Products</button>
+    <div class="dropdown-content">
+        <a href="#" onclick="filterProducts('rabbit-food')">Rabbit Pellets</a>
+        <a href="#" onclick="filterProducts('rabbit-Treat Sticks')">Treat Sticks</a>
+        <a href="#" onclick="filterProducts('rabbit-Water Bottle')">Water Bottle</a>
+        <a href="#" onclick="filterProducts('rabbit-Grooming Brush')">Grooming Brush</a>
+        <a href="#" onclick="filterProducts('rabbit-Hutch')">Rabbit Hutch</a>
+        <a href="#" onclick="filterProducts('rabbit-carrier')">Carrier for Rabbits</a>
+        <a href="#" onclick="filterProducts('rabbit-Harness')">Harness</a>
+        <a href="#" onclick="filterProducts('rabbit-')">Show All Rabbit Products</a>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Bird Products</button>
+    <div class="dropdown-content">
+        <a href="#" onclick="filterProducts('bird-cage')">Bird Cage</a>
+        <a href="#" onclick="filterProducts('bird-Cage cover')">Cage cover</a>
+        <a href="#" onclick="filterProducts('bird-seed mix')">Bird seed mix</a>
+        <a href="#" onclick="filterProducts('bird-Millet spray')">Millet spray</a>
+        <a href="#" onclick="filterProducts('bird-Food bowls')">Food bowls</a>
+        <a href="#" onclick="filterProducts('bird-Chew toys')">Chew toys</a>
+        <a href="#" onclick="filterProducts('bird-Ladders')">Ladders</a>
+        <a href="#" onclick="filterProducts('bird-Misting spray bottle')">Misting spray bottle</a>
+        <a href="#" onclick="filterProducts('bird-')">Show All Bird Products</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="container" id="product-container">
+    <!-- Dog products -->
+    <div class="product dog-food"><img src="image/dry dog food.jpeg"><h3>Dry Dog Food</h3><p> Price: 45$</p><button>Buy now</button></div>
+    <div class="product dog-food"><img src="image/wet dog food.jpeg"><h3>Wet Dog Food</h3><p> Price: 50$</p><button>Buy now</button></div>
+    <div class="product dog-food"><img src="image/grain free.jpeg"><h3>Grain-Free Dog Food</h3><p> Price: 45$</p><button>Buy now</button></div>
+    <div class="product dog-brush"><img src="image/dog brush.jpeg"><h3>Dog Brush</h3><p> Price: 40$</p><button>Buy now</button></div>
+    <div class="product dog-dental-chew"><img src="image/dental chew.jpeg"><h3>Dental Chews</h3><p> Price: 5$</p><button>Buy now</button></div>
+    <div class="product dog-shampoo"><img src="image/dog shampoo.jpeg"><h3>Dog Shampoo</h3><p> Price: 30$</p><button>Buy now</button></div>
+    <div class="product dog-anti-itch spray"><img src="image/anti itch.jpeg"><h3>Anti-itching Spray</h3><p> Price: 43$</p><button>Buy now</button></div>
+    <div class="product dog-nail-clippers"><img src="image/nail clipper.jpeg"><h3>Nail Clippers</h3><p> Price: 35$</p><button>Buy now</button></div>
+    <div class="product dog-collars"><img src="image/dog coller.jpeg"><h3>Dog Collars</h3><p> Price: 20$</p><button>Buy now</button></div>
+    <div class="product dog-leashe"><img src="image/dog leash.jpeg"><h3>Dog Leashes</h3><p> Price: 30$</p><button>Buy now</button></div>
+    <div class="product dog-houses"><img src="image/dog house.jpeg"><h3>Dog Houses</h3><p> Price: 32$</p><button>Buy now</button></div>
+    <div class="product dog-beds"><img src="image/dog bed.jpeg"><h3>Dog Beds</h3><p> Price: 50$</p><button>Buy now</button></div>
+    <div class="product dog-poop-bags"><img src="image/poop bag.jpeg"><h3>Poop Bags</h3><p> Price: 55$</p><button>Buy now</button></div>
+    <div class="product dog-bowls"><img src="image/bowl.jpeg"><h3>Dog Bowls</h3><p> Price: 10$</p><button>Buy now</button></div>
+    <div class="product dog-carriers"><img src="image/carrier.jpeg"><h3>Dog Carriers</h3><p> Price: 55$</p><button>Buy now</button></div>
+
+    <!-- Cat products -->
+    <div class="product dry-cat-food"><img src="image/dry cat food.jpeg"><h3>Dry Cat Food</h3><p> Price: 30$</p><button>Buy now</button></div>
+    <div class="product grain-free-cat-food"><img src="image/grain free cat.jpeg"><h3>Grain-Free Cat Food</h3><p> Price: 25$</p><button>Buy now</button></div>
+    <div class="product cat-nip"><img src="image/catnin.jpeg"><h3>Catnip</h3><p> Price: 45$</p><button>Buy now</button></div>
+    <div class="product cat-Shampoo"><img src="image/cat shampoo.jpeg"><h3>Cat Shampoo</h3><p> Price: 40$</p><button>Buy now</button></div>
+    <div class="product cat-Litter Boxes"><img src="image/litter.jpeg"><h3>Litter Boxes</h3><p> Price: 35$</p><button>Buy now</button></div>
+    <div class="product cat-Brushes"><img src="image/cat brush.jpeg"><h3>Cat Brushes</h3><p> Price: 15$</p><button>Buy now</button></div>
+    <div class="product cat-Caves"><img src="image/cat cave.jpeg"><h3>Cat Caves</h3><p> Price: 50$</p><button>Buy now</button></div>
+    <div class="product cat-Collars with Bells"><img src="image/coller.jpeg"><h3>Collars with Bells</h3><p> Price: 15$</p><button>Buy now</button></div>
+    <div class="product cat-Carriers"><img src="image/cat carrier.jpeg"><h3>Cat Carriers</h3><p> Price: 55$</p><button>Buy now</button></div>
+    <div class="product cat-Anti-Hairball Supplements"><img src="image/anti hairball.jpeg"><h3>Anti-Hairball </h3><p> Price: 50$</p><button>Buy now</button></div>
+
+    <!-- Rabbit products -->
+    <div class="product rabbit-food"><img src="image/rabit.jpeg"><h3>Rabbit Pellets</h3><p> Price: 55$</p><button>Buy now</button></div>
+    <div class="product rabbit-Treat Sticks"><img src="image/sticks.jpeg"><h3>Treat Sticks</h3><p> Price: 50$</p><button>Buy now</button></div>
+    <div class="product rabbit-Water Bottle"><img src="image/r water.jpeg"><h3>Water Bottle</h3><p> Price: 10$</p><button>Buy now</button></div>
+    <div class="product rabbit-Grooming Brush"><img src="image/r brush.jpeg"><h3>Grooming Brush</h3><p> Price: 5$</p><button>Buy now</button></div>
+    <div class="product rabbit-Hutch"><img src="image/r hutch.jpeg"><h3>Rabbit Hutch</h3><p> Price: 20$</p><button>Buy now</button></div>
+    <div class="product rabbit-carrier"><img src="image/r carr.jpeg"><h3>Carrier for Rabbits</h3><p> Price: 25$</p><button>Buy now</button></div>
+    <div class="product rabbit-Harness"><img src="image/r har.jpeg"><h3>Harness</h3><p> Price: 20$</p><button>Buy now</button></div>
+
+
+    <!-- Bird products -->
+    <div class="product bird-cage"><img src="image/b cage.jpeg"><h3>Bird Cage</h3><p> Price: 20$</p><button>Buy now</button></div>
+    <div class="product bird-Cage cover"><img src="image/b cover.jpeg"><h3>Cage cover</h3><p> Price: 10$</p><button>Buy now</button></div>
+    <div class="product bird-seed mix"><img src="image/b food.jpeg"><h3>Bird seed mix</h3><p> Price: 20$</p><button>Buy now</button></div>
+    <div class="product bird-Millet spray"><img src="image/b millet.jpeg"><h3>Millet spray</h3><p> Price: 5$</p><button>Buy now</button></div>
+    <div class="product bird-Food bowls"><img src="image/b bowl.jpeg"><h3>Food bowls</h3><p> Price: 5$</p><button>Buy now</button></div>
+    <div class="product bird-Chew toys"><img src="image/b chew.jpeg"><h3>Chew toys</h3><p> Price: 10$</p><button>Buy now</button></div>
+    <div class="product bird-Ladders"><img src="image/b lad.jpeg"><h3>Ladders</h3><p> Price: 6$</p><button>Buy now</button></div>
+    <div class="product bird-Misting spray bottle"><img src="image/b spray.jpeg"><h3>Misting spray bottle</h3><p> Price: 10$</p><button>Buy now</button></div>
+    </div>
+
+    <script>
+    function filterProducts(keyword) {
+        const allProducts = document.querySelectorAll('.product');
+        allProducts.forEach(product => {
+        if (keyword === '') {
+            product.style.display = 'block';
+        } else {
+        product.style.display = product.className.includes(keyword) ? 'block' : 'none';
+        }
+        });
+    }
+
+    // Show all on page load
+    window.onload = function() {
+    filterProducts('');
+    };
+</script>
+</body>
+</html>

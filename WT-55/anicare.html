@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Care Zone</title>
+  <link rel="stylesheet" href="anicare.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Animal Care Zone</h1>
+    <p>Select a pet type to watch care videos!</p>
+  </header>
+
+  <main>
+    <section class="selector-section">
+      <label for="petSelect">Choose Pet Type:</label>
+      <select id="petSelect">
+        <option value="dog">🐶 Dog</option>
+        <option value="cat">🐱 Cat</option>
+        <option value="bird">🐦 Bird</option>
+      </select>
+    </section>
+
+    <section id="videoList" class="video-list">
+      <!-- YouTube videos will be loaded here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Animal Care Zone. All rights reserved.</p>
+  </footer>
+
+  <script src="anipedia.js"></script>
+</body>
+</html>

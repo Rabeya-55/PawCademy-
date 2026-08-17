@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8D2AE;
+}
+
+.navbar {
+    background-color: #e4efc5; /* same as your screenshot */
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 30px;
+    font-weight: bold;
+    color: #004d26; /* dark green for links */
+}
+
+.navbar a {
+    display: block;
+    color: #004d26;
+    text-decoration: none;
+    padding: 14px 0;
+}
+
+.shop{
+color:#9d3030 ;
+text-align: center;
+background-color: #E8D2AE;
+padding: 15px;
+margin: 0;
+font-size: 30px;
+}
+.menu-bar {
+    display: flex;
+    padding: 0;
+    }
+
+    .dropdown {
+    position: relative;
+    }
+
+    .dropbtn {
+      background-color:#E8D2AE;
+      color: #2e522e ;
+      padding: 16px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #9f7272;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: #b18484 ;
+    }
+
+    .product {
+      background-color:#2e522e ;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 15%;
+      margin: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    button{
+        background-color: #b18484;
+        font-size: 20px;
+    }
+
+    button:hover {
+background-color: #a46d6d;
+color: white;
+cursor: pointer;
+transform: scale(1.05);
+transition: 0.3s ease;
+}
+

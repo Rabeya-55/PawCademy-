@@ -1,0 +1,188 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eaf4ec;
+  color: #023020;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #DDE8B9;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #004d40;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00796b;
+}
+
+.nav-container1{
+display: flex;
+justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background-image: url(./image/greenBG.jpg) ;
+  background-repeat: no-repeat;      /* Prevent image repetition */
+  background-size: cover;            /* Scale image to cover the div */
+  background-position: center;       /* Center the image in the div */
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+.section {
+  background-color: #E8D2AE;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #004d40;
+}
+
+/* Contact links */
+.contact a {
+  color: #6a1b9a;
+  text-decoration: none;
+  /* background-color: #CB8589; */
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background: #796465;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+.feature-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feature-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: var(--rose-dust, #CB8589);
+  color: white;
+  font-weight: bold;
+}
+
+.adoption {
+  background-color: #DDE8B9;
+}
+
+.knowledge {
+  background-color: #E8D2AE;
+}
+
+.products {
+  background-color: #CB8589;
+  color: white;
+}
+
+.products a {
+  background-color: #fff;
+  color: #CB8589;
+}
